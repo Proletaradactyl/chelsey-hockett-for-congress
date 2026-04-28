@@ -37,10 +37,10 @@ nav {
 }
 
 .nav-logo { display: flex; align-items: baseline; gap: 0.4rem; }
-.nav-logo-bold { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); letter-spacing: 0.1em; text-transform: uppercase; }
-.nav-logo-script { font-family: 'Satisfy', cursive; font-size: 1.4rem; color: var(--white); }
+.nav-logo-bold { font-family: 'Oswald', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--white); letter-spacing: 0.1em; text-transform: uppercase; }
+.nav-logo-script { font-family: 'Satisfy', cursive; font-size: 2rem; color: var(--white); }
 .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 1.5rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
 .nav-links a:hover { color: var(--white); }
 .nav-links a.active { color: var(--white); border-bottom: 2px solid var(--pink-bright); padding-bottom: 2px; }
 .nav-donate { background: var(--pink) !important; color: var(--white) !important; padding: 0.45rem 1.3rem; border-radius: 3px; font-weight: 700 !important; border-bottom: none !important; }
@@ -1136,7 +1136,6 @@ footer {
 }
 
 .page-hero::after {
-  content: '';
   position: absolute;
   bottom: -2px;
   left: 0; right: 0;
@@ -1145,7 +1144,6 @@ footer {
 }
 
 .page-hero::before {
-  content: '';
   position: absolute;
   top: -100px; right: -100px;
   width: 500px; height: 500px;
