@@ -19,7 +19,7 @@ document.querySelectorAll('.issue-pill').forEach(pill => {
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
       setTimeout(() => {
-        window.scrollBy({ top: -80, behavior: 'smooth' });
+        window.scrollBy({ top: -140, behavior: 'smooth' });
       }, 350);
       const header = target.querySelector('.issue-header');
       if (!header.classList.contains('open')) {
