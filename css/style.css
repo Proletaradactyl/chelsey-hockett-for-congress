@@ -1507,3 +1507,241 @@ footer {
 }
 
 .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+/* Hamburger menu button - hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 200;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+
+  /* ── NAV ── */
+  nav {
+    padding: 0 1.25rem;
+    height: 56px;
+  }
+
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0; right: 0;
+    background: var(--teal-deeper);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0 1.5rem;
+    border-bottom: 3px solid var(--pink);
+    z-index: 150;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+    border-bottom: none !important;
+  }
+
+  .nav-links a.active { border-left: 3px solid var(--pink-bright); padding-left: calc(1.5rem - 3px); }
+
+  .nav-donate {
+    margin: 0.5rem 1.25rem 0;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  /* ── HOMEPAGE HERO ── */
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero-text {
+    padding: 3.5rem 1.5rem 2.5rem;
+    background: var(--teal-dark);
+  }
+
+  .hero-last {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+  }
+
+  .hero-tagline { font-size: clamp(1.5rem, 6vw, 2rem); }
+
+  .hero-ctas { flex-direction: column; }
+  .hero-ctas a { text-align: center; }
+
+  .hero-right {
+    background: var(--pink);
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .hero-right h2 { font-size: 1.4rem; }
+
+  /* ── INTRO STRIP ── */
+  .intro-strip { padding: 1.1rem 1.25rem; }
+
+  /* ── ABOUT SECTION (homepage) ── */
+  .about { grid-template-columns: 1fr; }
+
+  .about-image-col { min-height: 280px; }
+  .about-image-inner { min-height: 280px; }
+
+  .about-text { padding: 2.5rem 1.5rem; }
+
+  /* ── ISSUES GRID (homepage) ── */
+  .issues { padding: 4rem 1.5rem; }
+
+  .issues-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+  /* ── QUOTE ── */
+  .quote-section { padding: 3.5rem 1.5rem; }
+
+  /* ── JOIN / FORM ── */
+  .join-wrap { padding: 3.5rem 1.5rem; }
+
+  .join-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  /* ── DONATE ── */
+  .donate-strip { padding: 3.5rem 1.5rem; }
+
+  /* ── FOOTER ── */
+  footer { padding: 2rem 1.5rem; }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* ── ABOUT PAGE HERO ── */
+  .about-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-hero-photo { min-height: 320px; }
+  .photo-placeholder { min-height: 320px; }
+
+  .about-hero-photo::after { display: none; }
+
+  .about-hero-text {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .hero-name-display .last {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+  /* ── IDENTITY STRIP ── */
+  .identity-strip {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1.25rem;
+    gap: 0;
+  }
+
+  .identity-item { border-right: 1px solid rgba(255,255,255,0.08); }
+  .identity-item:nth-child(2) { border-right: none; }
+  .identity-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,0.08); border-top: 1px solid rgba(255,255,255,0.08); }
+  .identity-item:last-child { border-right: none; border-top: 1px solid rgba(255,255,255,0.08); }
+
+  /* ── STORY SECTIONS ── */
+  .story-section {
+    grid-template-columns: 1fr;
+    direction: ltr !important;
+  }
+
+  .story-section > * { direction: ltr; }
+
+  .story-photo { min-height: 260px; order: -1; }
+  .story-text { padding: 2.5rem 1.5rem; order: 0; }
+
+  .story-section.reverse .story-photo { order: -1; }
+  .story-section.reverse .story-text { order: 0; }
+
+  /* ── FULL QUOTE ── */
+  .full-quote { padding: 3.5rem 1.5rem; }
+
+  /* ── ENDORSEMENTS ── */
+  .endorsements { padding: 3.5rem 1.5rem; }
+
+  /* ── INVOLVEMENT ── */
+  .involvement { grid-template-columns: 1fr; }
+
+  .involvement-text { padding: 3rem 1.5rem; }
+
+  .involvement-photo { min-height: 280px; }
+
+  /* ── ABOUT CTA ── */
+  .about-cta { padding: 3.5rem 1.5rem; }
+
+  .about-cta .cta-buttons { flex-direction: column; align-items: center; }
+
+  /* ── ISSUES PAGE ── */
+  .page-hero { padding: 3.5rem 1.5rem 3rem; }
+
+  .issue-nav { padding: 1rem 1.25rem; top: 56px; }
+
+  .issues-content { padding: 2.5rem 1.25rem 4rem; }
+
+  .issue-header { padding: 1.25rem 1rem; }
+
+  .issue-body { padding: 1.5rem 1rem 1.5rem 1rem; }
+
+  .issues-cta { padding: 3rem 1.5rem; }
+
+  .cta-buttons { flex-direction: column; align-items: center; }
+
+  .btn-pink,
+  .btn-outline-white,
+  .btn-white { width: 100%; text-align: center; box-sizing: border-box; }
+
+}
+
+@media (max-width: 480px) {
+
+  .identity-strip { grid-template-columns: 1fr; }
+
+  .identity-item { border-right: none !important; border-top: 1px solid rgba(255,255,255,0.08); }
+  .identity-item:first-child { border-top: none; }
+
+  .hero-last { font-size: clamp(3rem, 18vw, 4rem); }
+
+  .nav-links a { font-size: 0.95rem; }
+
+}

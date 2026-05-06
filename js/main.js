@@ -18,8 +18,10 @@ document.querySelectorAll('.issue-pill').forEach(pill => {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      // Adjust offset based on screen width for mobile nav coverage
+      const offset = window.innerWidth <= 768 ? -200 : -140;
       setTimeout(() => {
-        window.scrollBy({ top: -140, behavior: 'smooth' });
+        window.scrollBy({ top: offset, behavior: 'smooth' });
       }, 350);
       const header = target.querySelector('.issue-header');
       if (!header.classList.contains('open')) {
