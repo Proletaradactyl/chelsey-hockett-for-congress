@@ -354,7 +354,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 3.5rem 5rem 3rem;
+  padding: 5rem 3.5rem 5rem 10rem;
 }
 
 .hero-right h2 {
@@ -604,25 +604,25 @@ footer {
  /* JOIN */
   .join-wrap {
     background: var(--cream);
-    padding: 6rem 4rem;
+    padding: 5rem 3rem;
   }
 
   .join-inner {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
   }
 
-  .join-form {
-    background: var(--white);
-    border: 1px solid #dde3e8;
-    border-top: 4px solid var(--pink);
-    border-radius: 4px;
-    padding: 2.5rem;
-  }
+.join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
   .join-form h3 {
     font-family: 'Oswald', sans-serif;
