@@ -285,7 +285,7 @@ footer {
 
 .hero-first {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ footer {
 
 .hero-last {
   font-family: 'Caveat', cursive;
-  font-size: clamp(4rem, 7vw, 6rem);
+  font-size: clamp(5rem, 8vw, 7rem);
   color: var(--white);
   display: block;
   line-height: 1;
@@ -376,9 +376,16 @@ footer {
 }
 
 .checklist li {
-  display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+}
+
+.check-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.check-title {
   font-family: 'Oswald', sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
@@ -386,6 +393,16 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+.check-sub {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.4;
 }
 
 .check-icon {
@@ -475,17 +492,6 @@ footer {
   overflow: hidden;
 }
 
-.issues::before {
-  content: '';
-  position: absolute;
-  top: -80px;
-  right: -80px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: rgba(212, 53, 122, 0.12);
-  pointer-events: none;
-}
 
 .issues-header {
   text-align: center;
@@ -550,7 +556,7 @@ footer {
 
   /* QUOTE */
   .quote-section {
-    background: var(--pink);
+    background: var(--teal-deeper);
     padding: 5rem 4rem;
     text-align: center;
     position: relative;
@@ -697,17 +703,7 @@ footer {
     overflow: hidden;
   }
 
-  .donate-strip::after {
-    content: '';
-    position: absolute;
-    bottom: -60px;
-    right: -60px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(212, 53, 122, 0.15);
-    pointer-events: none;
-  }
+
 
   .donate-strip .section-label { color: rgba(255,255,255,0.6); }
 
