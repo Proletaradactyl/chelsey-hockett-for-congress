@@ -554,6 +554,131 @@ footer {
   padding-bottom: 1px;
 }
 
+/* EVENTS */
+.events {
+  background: var(--teal-deeper);
+  padding: 5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.events-header .section-label { color: var(--pink-bright); }
+.events-header .section-title { color: var(--white); }
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.event-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-top: 3px solid var(--pink);
+  border-radius: 3px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: background 0.2s;
+}
+
+.event-card:hover { background: rgba(255,255,255,0.1); }
+
+.event-date-row { display: flex; align-items: center; gap: 0.75rem; }
+
+.event-date-box {
+  background: var(--pink);
+  border-radius: 3px;
+  padding: 0.3rem 0.65rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.event-date-box .month {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  line-height: 1;
+}
+
+.event-date-box .day {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.event-type-badge {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pink-bright);
+  background: rgba(232,67,147,0.15);
+  border: 1px solid rgba(232,67,147,0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: 2px;
+}
+
+.event-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.event-meta { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.event-meta span {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.4;
+}
+
+.event-meta span strong { color: rgba(255,255,255,0.75); font-weight: 600; }
+
+.event-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pink-bright);
+  text-decoration: none;
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 1px;
+  width: fit-content;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .events { padding: 4rem 1.5rem; }
+  .events-grid { grid-template-columns: 1fr; }
+}
+
   /* QUOTE */
   .quote-section {
     background: var(--teal-deeper);
