@@ -35,7 +35,7 @@
 <!-- ISSUE NAV PILLS -->
 <div class="issue-nav">
   <a href="#affordability" class="issue-pill">Economic Needs</a>
-  <a href="#accountability" class="issue-pill active">Democracy & Accountability</a>
+  <a href="#democracy-accountability" class="issue-pill active">Democracy & Accountability</a>
   <a href="#education" class="issue-pill">Education</a>
   <a href="#justice" class="issue-pill">Justice & Civil Rights</a>
   <a href="#environment" class="issue-pill">Environment</a>
@@ -46,11 +46,12 @@
 <div class="issues-content">
 
   <!-- ECONOMIC NEEDS -->
-  <div class="section-divider"  >
+  <div class="section-divider" id="affordability">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label" id="affordability">Economic Needs</span>
+    <span class="section-divider-label">Economic Needs</span>
     <div class="section-divider-line"></div>
   </div>
+
   <!-- Affordability -->
   <div class="issue-section">
     <button class="issue-header" onclick="toggleIssue(this)">
@@ -78,7 +79,7 @@
       </ul>
     </div>
   </div>
-  
+
   <!-- Invest in Our Communities -->
   <div class="issue-section" id="communities">
     <button class="issue-header" onclick="toggleIssue(this)">
@@ -96,20 +97,20 @@
     <div class="issue-body">
       <ul class="issue-points">
         <li><span><b>Fully fund public services.</b> Libraries, recreation centers, and national parks make our communities more attractive. People are more likely to move to and invest in an area that has these amenities.</span></li>
-        <li><span><b>Build more public transit.</b> Our society has become overly dependent on cars. Not only does this create unnecessary traffic congestion, but it also causes pollution, social isolation due to separated communities, and a lack of walkable areas for people to relax in. Public transit is also fantastic for businesses! Workers, customers, and tourists all heavily benefit from having more options. It is estimated for every $1 invested in public transit, we get $5 back.</span></li> 
+        <li><span><b>Build more public transit.</b> Our society has become overly dependent on cars. Not only does this create unnecessary traffic congestion, but it also causes pollution, social isolation due to separated communities, and a lack of walkable areas for people to relax in. Public transit is also fantastic for businesses! Workers, customers, and tourists all heavily benefit from having more options. It is estimated for every $1 invested in public transit, we get $5 back.</span></li>
       </ul>
     </div>
   </div>
 
-<!-- DEMOCRACY & ACCOUNTABILITY -->
-  <div class="section-divider" >
+  <!-- DEMOCRACY & ACCOUNTABILITY -->
+  <div class="section-divider" id="democracy-accountability">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label"id="accountability">Democracy & Accountability</span>
+    <span class="section-divider-label">Democracy & Accountability</span>
     <div class="section-divider-line"></div>
   </div>
 
   <!-- Accountability -->
-  <div class="issue-section" id="accountability">
+  <div class="issue-section">
     <button class="issue-header" onclick="toggleIssue(this)">
       <div class="issue-icon-box">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>scale-balance</title><path d="M12,3C10.73,3 9.6,3.8 9.18,5H3V7H4.95L2,14C1.53,16 3,17 5.5,17C8,17 9.56,16 9,14L6.05,7H9.17C9.5,7.85 10.15,8.5 11,8.83V20H2V22H22V20H13V8.82C13.85,8.5 14.5,7.85 14.82,7H17.95L15,14C14.53,16 16,17 18.5,17C21,17 22.56,16 22,14L19.05,7H21V5H14.83C14.4,3.8 13.27,3 12,3M12,5A1,1 0 0,1 13,6A1,1 0 0,1 12,7A1,1 0 0,1 11,6A1,1 0 0,1 12,5M5.5,10.25L7,14H4L5.5,10.25M18.5,10.25L20,14H17L18.5,10.25Z" /></svg>
@@ -132,14 +133,14 @@
     </div>
   </div>
 
-    <!-- EDUCATION -->
-  <div class="section-divider">
+  <!-- EDUCATION -->
+  <div class="section-divider" id="education">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label" id="education">Education</span>
+    <span class="section-divider-label">Education</span>
     <div class="section-divider-line"></div>
   </div>
 
-    <!-- EDUCATION -->
+  <!-- EDUCATION -->
   <div class="issue-section">
     <button class="issue-header" onclick="toggleIssue(this)">
       <div class="issue-icon-box">
@@ -163,10 +164,10 @@
     </div>
   </div>
 
-    <!-- JUSTICE & CIVIL RIGHTS -->
-  <div class="section-divider">
+  <!-- JUSTICE & CIVIL RIGHTS -->
+  <div class="section-divider" id="justice">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label" id="justice">Justice & Civil Rights</span>
+    <span class="section-divider-label">Justice & Civil Rights</span>
     <div class="section-divider-line"></div>
   </div>
 
@@ -194,8 +195,6 @@
     </div>
   </div>
 
-
-
   <!-- Prevent Crime -->
   <div class="issue-section" id="crime">
     <button class="issue-header" onclick="toggleIssue(this)">
@@ -220,9 +219,9 @@
   </div>
 
   <!-- ENVIRONMENT -->
-  <div class="section-divider">
+  <div class="section-divider" id="environment">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label" id="environment">Environment & Resources</span>
+    <span class="section-divider-label">Environment & Resources</span>
     <div class="section-divider-line"></div>
   </div>
 
@@ -249,10 +248,10 @@
     </div>
   </div>
 
-    <!-- FOREIGN POLICY -->
-  <div class="section-divider">
+  <!-- FOREIGN POLICY -->
+  <div class="section-divider" id="foreign-policy">
     <div class="section-divider-line"></div>
-    <span class="section-divider-label" id="foreign-policy">Foreign Policy</span>
+    <span class="section-divider-label">Foreign Policy</span>
     <div class="section-divider-line"></div>
   </div>
 
@@ -263,7 +262,7 @@
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
       </div>
       <div class="issue-header-text">
-        <h2>Foreign Policy</h2>
+        <h2>Upholding Humane Foreign Policy</h2>
         <p>We should not bully or enforce international bullies</p>
       </div>
       <div class="issue-chevron">
@@ -272,9 +271,9 @@
     </button>
     <div class="issue-body">
       <ul class="issue-points">
-        <li><span><b>End the Genocide in Gaza</b> by passing the <b>Block the Bombs Act</b> and other legislation that will cut off all US funding for the <b>apartheid state of Israel</b> while at the same time forcing through foreign aid to Gaza so their people will no longer face starvation.</span></li>
-        <li><span>Support the right of return for Palestinians so they can reclaim their lands that Israelis have stolen from them. <b>They have a right to peace, freedom, and self-determination.</b></span></li>
-        <li><span><b>End the forever wars. I say no to war in Iran. No to war in Venezuela. No to war in Cuba. No to war in Mexico.</b> Our citizens are sick of the trillions of taxpayer dollars wasted on these senseless conflicts. We are all heartbroken by the pointless waste of human lives, too often those of innocent women and children. We should be building schools, not bombs. We should be funding our healthcare and housing, not dictatorial regimes.</span></li>
+        <li><span><b>End the Genocide in Gaza</b> by passing the <b>Block the Bombs Act</b> and other legislation that will terminate all US funding for the apartheid state of Israel while at the same time forcing through desperately needed aid to the people of Palestine. I will work with any and all allies in Congress, like representative Tlaib, to enforce international law and hold those responsible for the genocide accountable.</span></li>
+        <li><span>I will support the internationally recognized <b>right of return</b> for Palestinians so they may reclaim their lands from which they have been ethnically cleansed. Palestinians, like all people, have a right to peace, freedom, and self-determination.</span></li>
+        <li><span><b>End the forever wars. No more war in Iran. No more war in Lebanon. End the war and genocide in Sudan. No to war in Venezuela. No to war in Cuba. No to war in Mexico.</b> Our citizens are sick of the <b>trillions of taxpayer dollars</b> wasted on these senseless conflicts. We are all heartbroken by the pointless waste of human lives, too often those of innocent women and children. We should be building schools, not bombing them. We should be funding our own country's healthcare and housing, not propping up petty dictatorial regimes.</span></li>
       </ul>
     </div>
   </div>

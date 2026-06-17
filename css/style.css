@@ -681,7 +681,7 @@ footer {
 
   /* QUOTE */
   .quote-section {
-    background: var(--teal-deeper);
+    background: var(--teal);
     padding: 5rem 4rem;
     text-align: center;
     position: relative;
@@ -1590,6 +1590,7 @@ footer {
   align-items: center;
   gap: 1rem;
   margin: 3rem 0 1.5rem;
+  scroll-margin-top: 140px;
 }
 
 .section-divider-line { flex: 1; height: 1px; background: #dde3e8; }
@@ -1657,6 +1658,10 @@ footer {
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 768px) {
+
+  .section-divider {
+    scroll-margin-top: 300px;
+  }
 
   /* ── NAV ── */
   nav {
