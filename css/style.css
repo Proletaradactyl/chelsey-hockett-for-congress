@@ -64,6 +64,23 @@ footer {
 .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-links a:hover { color: var(--white); }
 .footer-legal { font-size: 0.72rem; color: rgba(255,255,255,0.25); text-align: center; }
+.footer-social {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+}
 
 /* CONTACT FORM */
 .contact-section {
@@ -366,6 +383,30 @@ footer {
   letter-spacing: 0.04em;
   margin-bottom: 1.5rem;
   line-height: 1.15;
+}
+
+.photo-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/protest.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px) brightness(0.6);
+  transform: scale(1.1); /* prevents blur edges from showing */
+  opacity: 0.5;
+}
+
+.photo-main {
+  position: relative; /* sits above the bg */
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  border: 4px solid hotpink;
 }
 
 .checklist {
@@ -1775,6 +1816,7 @@ footer {
     gap: 1rem;
   }
 
+ 
   /* ── ABOUT PAGE HERO ── */
   .about-hero {
     grid-template-columns: 1fr;
