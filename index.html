@@ -1,118 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chelsey Hockett for Congress</title>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@400;600;700&family=Satisfy&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chelsey Hockett for Congress</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Satisfy&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@400;600;700&family=Satisfy&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">
-    <span class="nav-logo-bold">Chelsey</span>
-    <span class="nav-logo-script">Hockett</span>
-  </div>
-  <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="issues.html">Issues</a></li>
-    <li><a href="https://lp.constantcontactpages.com/sl/wQyLsHx">Volunteer</a></li>
-    <li><a href="https://secure.actblue.com/donate/chelseyhockettforcongress" class="nav-donate">Donate</a></li>
-  </ul>
-</nav>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">
+        <span class="nav-logo-bold">Chelsey</span>
+        <span class="nav-logo-script">Hockett</span>
+      </div>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        onclick="
+          this.classList.toggle('open');
+          document.querySelector('.nav-links').classList.toggle('open');
+        "
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li>
+          <a
+            href="https://secure.actblue.com/donate/chelseyhockettforcongress"
+            class="nav-donate"
+            >Donate</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
-<div class="hero-text">
-  <p class="hero-eyebrow">U.S. Congress · Texas District 5</p>
-  <div class="hero-name-block">
-    <span class="hero-first">Chelsey</span>
-    <span class="hero-last">Hockett</span>
-  </div>
-  <img src="images/chelsey.jpg" alt="Chelsey Hockett" style="width: 100%; max-width: 320px; border-radius: 3px; margin-bottom: 1.5rem; object-fit: cover; border: 3px solid var(--pink);">
-  <div class="hero-divider">
-      <div class="hero-divider-line"></div>
-      <span class="texas-star">★</span>
-      <div class="hero-divider-line"></div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">U.S. Congress · Texas District 5</p>
+        <div class="hero-name-block">
+          <span class="hero-first">Chelsey</span>
+          <span class="hero-last">Hockett</span>
+        </div>
+        <img
+          src="images/chelsey.jpg"
+          alt="Chelsey Hockett"
+          style="
+            width: 100%;
+            max-width: 320px;
+            border-radius: 3px;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            border: 3px solid var(--pink);
+          "
+        />
+        <div class="hero-divider">
+          <div class="hero-divider-line"></div>
+          <span class="texas-star">★</span>
+          <div class="hero-divider-line"></div>
+        </div>
+        <h2 class="hero-tagline">Fighting for<br />ALL Texans.</h2>
+        <p class="hero-sub-race">
+          For U.S. Congress · Texas District 5 · November 3, 2026
+        </p>
+        <div class="hero-ctas">
+          <a
+            href="https://lp.constantcontactpages.com/sl/wQyLsHx"
+            class="btn-pink"
+            >Get Involved</a
+          >
+          <a href="about.html" class="btn-outline-white">Meet Chelsey</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div>
+          <img
+            src="images/logo.png"
+            alt="Chelsey Hockett Campaign Logo"
+            style="
+              width: 70%;
+              max-width: 320px;
+              border-radius: 3px;
+              margin-bottom: 1.5rem;
+              object-fit: cover;
+              border: 3px solid var(--pink);
+            "
+          />
+        </div>
+        <h2>What I Stand For</h2>
+        <ul class="checklist">
+          <li>
+            <span class="check-icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                /></svg
+            ></span>
+            <span class="check-content">
+              <span class="check-title">Fair Taxation</span>
+              <span class="check-sub"
+                >End corporate breaks and fund our communities.</span
+              >
+            </span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                /></svg
+            ></span>
+            <span class="check-content">
+              <span class="check-title">Protect Our Resources</span>
+              <span class="check-sub"
+                >Clean air, water, and land for all Texans.</span
+              >
+            </span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                /></svg
+            ></span>
+            <span class="check-content">
+              <span class="check-title">Fully Fund Public Schools</span>
+              <span class="check-sub"
+                >Every child deserves a great education and well-paid
+                teachers.</span
+              >
+            </span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                /></svg
+            ></span>
+            <span class="check-content">
+              <span class="check-title">Medicare-for-All</span>
+              <span class="check-sub"
+                >Healthcare is a human right, not a privilege.</span
+              >
+            </span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                /></svg
+            ></span>
+            <span class="check-content">
+              <span class="check-title"
+                >$25 Minimum Wage & Expanded Social Security</span
+              >
+              <span class="check-sub"
+                >If you work full-time, you should be able to afford your
+                life.</span
+              >
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INTRO STRIP -->
+    <div class="intro-strip">
+      <p>
+        Election Day: <span>November 3, 2026</span> &nbsp;·&nbsp; Early Voting:
+        <span>October 19–30</span> &nbsp;·&nbsp; TX District 5
+      </p>
     </div>
-    <h2 class="hero-tagline">Fighting for<br>Working Families.</h2>
-    <p class="hero-sub-race">For U.S. Congress · Texas District 5 · November 3, 2026</p>
-    <div class="hero-ctas">
-      <a href="https://lp.constantcontactpages.com/sl/wQyLsHx" class="btn-pink">Get Involved</a>
-      <a href="about.html" class="btn-outline-white">Meet Chelsey</a>
-    </div>
-  </div>
 
-  <div class="hero-right">
-    <div>
-      <img src="images/logo.png" alt="Chelsey Hockett Campaign Logo" style="width: 70%; max-width: 320px; border-radius: 3px; margin-bottom: 1.5rem; object-fit: cover; border: 3px solid var(--pink);">
-    </div>
-    <h2>What I Stand For</h2>
-    <ul class="checklist">
-  <li>
-    <span class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></span>
-    <span class="check-content">
-      <span class="check-title">Fair Taxation</span>
-      <span class="check-sub">End corporate breaks and fund our communities.</span>
-    </span>
-  </li>
-  <li>
-    <span class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></span>
-    <span class="check-content">
-      <span class="check-title">Protect Our Resources</span>
-      <span class="check-sub">Clean air, water, and land for all Texans.</span>
-    </span>
-  </li>
-  <li>
-    <span class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></span>
-    <span class="check-content">
-      <span class="check-title">Fully Fund Public Schools</span>
-      <span class="check-sub">Every child deserves a great education and well-paid teachers.</span>
-    </span>
-  </li>
-  <li>
-    <span class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></span>
-    <span class="check-content">
-      <span class="check-title">Medicare-for-All</span>
-      <span class="check-sub">Healthcare is a human right, not a privilege.</span>
-    </span>
-  </li>
-  <li>
-    <span class="check-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></span>
-    <span class="check-content">
-      <span class="check-title">$25 Minimum Wage & Expanded Social Security</span>
-      <span class="check-sub">If you work full-time, you should be able to afford your life.</span>
-    </span>
-  </li>
-</ul>
-  </div>
-</section>
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-image-col">
+        <div class="about-image-inner">
+          <img
+            src="images/chelseyandAva.jpg"
+            alt="Chelsey Hockett smiling and standing outside with her daughter"
+            style="
+              position: absolute;
+              top: 1.5rem;
+              left: 1.5rem;
+              width: calc(100% - 3rem);
+              height: calc(100% - 3rem);
+              object-fit: cover;
+              border-radius: 3px;
+            "
+          />
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About Chelsey</h2>
+        <p>
+          I'm a mom who lives in East Texas who knows firsthand what it means to
+          stretch a budget, navigate a broken healthcare system, and worry every
+          day about the quality of education her kids are receiving as our
+          public schools get defunded by voucher scams.
+        </p>
+        <p>
+          I'm not a career politician. I'm running for Congress because working
+          families deserve someone in Washington who's actually living their
+          reality.
+        </p>
+        <a href="about.html" class="btn-pink">Her Full Story →</a>
+      </div>
+    </section>
 
-<!-- INTRO STRIP -->
-<div class="intro-strip">
-  <p>Election Day: <span>November 3, 2026</span> &nbsp;·&nbsp; Early Voting: <span>October 19–30</span> &nbsp;·&nbsp; TX District 5</p>
-</div>
-
-<!-- ABOUT -->
-<section class="about">
-  <div class="about-image-col">
-    <div class="about-image-inner">
-      <img src="images/chelseyandAva.jpg" alt="Chelsey Hockett smiling and standing outside with her daughter" style="position: absolute; top: 1.5rem; left: 1.5rem; width: calc(100% - 3rem); height: calc(100% - 3rem); object-fit: cover; border-radius: 3px">
-    </div>
-  </div>
-  <div class="about-text">
-    <h2 class="section-title">About Chelsey</h2>
-    <p>Chelsey Hockett is a mom who lives in East Texas who knows firsthand what it means to stretch a budget, navigate a broken healthcare system, and worry every day about the quality of education her kids are receiving as our public schools get defunded by voucher scams.</p>
-    <p>She's not a career politician. She's one of us and is running for Congress because working families deserve someone in Washington who's actually living their reality.</p>
-    <a href="about.html" class="btn-pink">Her Full Story →</a>
-  </div>
-</section>
-
-<!-- ISSUES 
+    <!-- ISSUES 
 <section class="issues">
   <div class="issues-header">
     <p class="section-label">Her Platform</p>
@@ -153,125 +270,139 @@
 </section>
 -->
 
-<!-- EVENTS -->
-<section class="events">
-  <div class="events-header">
-    <p class="section-label">On the Ground</p>
-    <h2 class="section-title">Upcoming <span class="script-accent">Events</span></h2>
-  </div>
-
-  <div class="events-grid">
-    <div class="event-card">
-      <div class="event-date-row">
-        <div class="event-date-box">
-          <div class="month">Jul</div>
-          <div class="day">12</div>
-        </div>
-        <span class="event-type-badge">Town Hall</span>
-      </div>
-      <h3>East Texas Town Hall</h3>
-      <div class="event-meta">
-        <span><strong>2:00 PM – 4:00 PM</strong></span>
-        <span>Lindale Community Center · Lindale, TX</span>
-      </div>
-      <a href="#" class="event-link">RSVP →</a>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-row">
-        <div class="event-date-box">
-          <div class="month">Jul</div>
-          <div class="day">19</div>
-        </div>
-        <span class="event-type-badge">Canvass</span>
-      </div>
-      <h3>Knock Doors with Chelsey</h3>
-      <div class="event-meta">
-        <span><strong>9:00 AM – 12:00 PM</strong></span>
-        <span>Canton, TX · Meet at Wal-Mart parking lot</span>
-      </div>
-      <a href="#" class="event-link">Sign Up →</a>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-row">
-        <div class="event-date-box">
-          <div class="month">Aug</div>
-          <div class="day">2</div>
-        </div>
-        <span class="event-type-badge">Fundraiser</span>
-      </div>
-      <h3>Summer BBQ Fundraisernnn</h3>
-      <div class="event-meta">
-        <span><strong>5:00 PM – 8:00 PM</strong></span>
-        <span>Tyler, TX · Location TBA</span>
-      </div>
-      <a href="#" class="event-link">Get Tickets →</a>
-    </div>
-  </div>
-
-  <div class="events-footer" style="text-align: center; margin-top: 2.5rem; position: relative; z-index: 2;">
-    <a href="#" class="btn-outline-white">See All Events →</a>
+<!--PRESS RELEASE-->
+<section class="press-release">
+  <div class="press-release-content">
+    <h2>Press Release</h2>
+    <p>Latest news and updates from the campaign.</p>
   </div>
 </section>
 
-<!-- COMMUNITY PHOTO -->
-<section class="quote-section" style="position: relative; overflow: hidden;">
-  <div class="photo-bg" style="
-    position: absolute;
-    inset: 0;
-    background-image: url('images/protest.jpeg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px) brightness(0.6);
-    transform: scale(1.1);
-    opacity: 0.5;
-  "></div>
-  <div style="position: relative;">
-    <img src="images/protest.jpeg" alt="Chelsey Hockett standing with a group of supporters outside" style="width: 100%; max-width: 700px; border-radius: 3px; margin: 0 auto; display: block; object-fit: cover; border: 3px solid var(--pink);">
-  </div>
-</section>
+    <!-- COMMUNITY PHOTO -->
+    <section class="quote-section" style="position: relative; overflow: hidden">
+      <div
+        class="photo-bg"
+        style="
+          position: absolute;
+          inset: 0;
+          background-image: url('images/protest.jpeg');
+          background-size: cover;
+          background-position: center;
+          filter: blur(8px) brightness(0.6);
+          transform: scale(1.1);
+          opacity: 0.5;
+        "
+      ></div>
+      <div style="position: relative">
+        <img
+          src="images/protest.jpeg"
+          alt="Chelsey Hockett standing with a group of supporters outside"
+          style="
+            width: 100%;
+            max-width: 700px;
+            border-radius: 3px;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
+            border: 3px solid var(--pink);
+          "
+        />
+      </div>
+    </section>
 
-<!-- JOIN -->
-<div class="join-wrap">
-  <div class="join-inner">
-    <div>
-      <p class="section-label">Get Involved</p>
-      <h2 class="section-title">This Campaign Runs on <span class="script-accent">People,</span> Not PACs.</h2>
-      <p style="font-size: 1.05rem; color: #3a4149; line-height: 1.75; margin: 1.2rem 0 2rem;">Chelsey's campaign is built by neighbors, not corporate donors. Sign up to volunteer, knock doors, or stay in the loop.</p>
+    <!-- JOIN -->
+    <div class="join-wrap">
+      <div class="join-inner">
+        <div>
+          <p class="section-label">Get Involved</p>
+          <h2 class="section-title">
+            This Campaign Runs on <span class="script-accent">People,</span> Not
+            PACs.
+          </h2>
+          <p
+            style="
+              font-size: 1.05rem;
+              color: #3a4149;
+              line-height: 1.75;
+              margin: 1.2rem 0 2rem;
+            "
+          >
+            Chelsey's campaign is built by neighbors, not corporate donors. Sign
+            up to volunteer, knock doors, or stay in the loop.
+          </p>
+        </div>
+        <div>
+          <a
+            href="https://lp.constantcontactpages.com/sl/wQyLsHx"
+            class="btn-pink"
+            >Volunteer Today →</a
+          >
+        </div>
+      </div>
     </div>
-    <div>
-      <a href="https://lp.constantcontactpages.com/sl/wQyLsHx" class="btn-pink">Volunteer Today →</a>
-    </div>
-  </div>
-</div>
 
-<!-- DONATE -->
-<section class="donate-strip">
-  <p class="section-label">Support the Campaign</p>
-  <h2>Every Dollar Fights<br>for East Texas.</h2>
-  <p>No corporate PAC money. No billionaire backers. Just people who believe working families deserve real representation.</p>
-  <div class="donate-amounts">
-    <a href="https://secure.actblue.com/donate/chelseyhockettforcongress" class="donate-btn">Donate Here</a>
-  </div>
-</section>
+    <!-- DONATE -->
+    <section class="donate-strip">
+      <p class="section-label">Support the Campaign</p>
+      <h2>Every Dollar Fights<br />for Congressional District 5 in Texas.</h2>
+      <p>
+        No corporate PAC money. No billionaire backers. Just people who believe
+        working families deserve real representation.
+      </p>
+      <div class="donate-amounts">
+        <a
+          href="https://secure.actblue.com/donate/chelseyhockettforcongress"
+          class="donate-btn"
+          >Donate Here</a
+        >
+      </div>
+    </section>
 
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">
-    <span class="footer-logo-bold">Chelsey</span>
-    <span class="footer-logo-script">Hockett</span>
-  </div>
-  <p class="footer-tagline">For U.S. Congress · Texas District 5</p>
-  <ul class="footer-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="issues.html">Issues</a></li>
-    <li><a href="https://lp.constantcontactpages.com/sl/wQyLsHx">Volunteer</a></li>
-    <li><a href="mailto:campaign@chelseyhockettforcongress.com">Contact</a></li>
-  </ul>
-  <p class="footer-legal">Paid for by the Chelsey Hockett for Congress Campaign · chelseyhockettforcongress.com</p>
-</footer>
-</body>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <span class="footer-logo-bold">Chelsey</span>
+        <span class="footer-logo-script">Hockett</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li>
+          <a href="mailto:campaign@chelseyhockettforcongress.com">Contact</a>
+        </li>
+      </ul>
+      <div class="footer-social">
+        <a
+          href="https://facebook.com/YOURPAGE"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://instagram.com/YOURHANDLE"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://tiktok.com/@YOURHANDLE"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-legal">
+        Paid for by the Chelsey Hockett for Congress Campaign ·
+        chelseyhockettforcongress.com
+      </p>
+    </footer>
+  </body>
 </html>
