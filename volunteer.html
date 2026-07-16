@@ -18,9 +18,9 @@
     <span class="nav-logo-bold">Chelsey</span>
     <span class="nav-logo-script">Hockett</span>
   </div>
-  <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')"></button>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="issues.html">Issues</a></li>
     <li><a href="volunteer.html" class="active">Volunteer</a></li>
@@ -32,6 +32,9 @@
 <section class="volunteer-page">
   <h1>Get Involved.</h1>
   <p class="volunteer-page-sub">Join Chelsey in fighting for the issues that matter for our communities.</p>
+  <div class="events-footer" style="text-align: center; margin-top: 2.5rem; position: relative; z-index: 2;">
+  <a href="https://lp.constantcontactpages.com/sl/wIpSok3" class="btn-outline-white">Volunteer Form</a>
+</div>
 </section>
 
 <!-- EVENTS -->
@@ -51,19 +54,28 @@
   <!-- Cards render here via events-calendar.js -->
 </div>
 
+
 <div class="events-footer" style="text-align: center; margin-top: 2.5rem; position: relative; z-index: 2;">
-  <a href="#" class="btn-outline-white">See All Events →</a>
+  <a href="https://calendar.google.com/calendar/embed?src=def2ddc33d373b6f5f5391a009259743a3705145caee8e10b9bcb55c4f56cea5%40group.calendar.google.com&ctz=America%2FChicago" class="btn-outline-white">See All Events →</a>
 </div>
+
 
 <script src="js/events-calendar.js"></script>
 </section>
 
-<!--NEWSLETTER-->
-<section class="newsletter">
-    <h2 class="section-title">Stay Updated</h2>
-    <p>Subscribe to our newsletter to receive the latest news and updates.</p>
+<!--
+NEWSLETTER
+<div class="newsletter-card">
+  <div class="newsletter-date-row">
+    <div class="newsletter-date-box">
+      <div class="month">Jul</div>
+      <div class="day">08</div>  
+    </div>
   </div>
-</section>
+  <h3>[Latest campaign subject line]</h3>
+  <a href="[permalink_url]" class="newsletter-link">Read the newsletter →</a>
+</div>
+-->
 
 <!-- FOOTER -->
 <footer>
