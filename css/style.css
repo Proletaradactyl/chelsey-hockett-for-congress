@@ -1682,22 +1682,6 @@ footer {
   text-align: center;
 }
 
-.volunteer-page::after {
-  position: absolute;
-  bottom: -2px;
-  left: 0; right: 0;
-  height: 5px;
-  background: var(--pink);
-}
-
-.volunteer-page::before {
-  position: absolute;
-  top: -100px; right: -100px;
-  width: 500px; height: 500px;
-  border-radius: 50%;
-  background: var(--pink);
-  pointer-events: none;
-}
 
 .volunteer-page-label {
   font-family: 'Oswald', sans-serif;
@@ -1829,6 +1813,8 @@ footer {
   .hero-text {
     padding: 3.5rem 1.5rem 2.5rem;
     background: var(--teal-dark);
+    align-items: center;
+    text-align: center;
   }
 
   .hero-last {
@@ -1843,6 +1829,8 @@ footer {
   .hero-right {
     background: var(--pink);
     padding: 2.5rem 1.5rem 3rem;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-right h2 { font-size: 1.4rem; }
