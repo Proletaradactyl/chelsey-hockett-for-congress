@@ -1830,7 +1830,6 @@ footer {
     background: var(--pink);
     padding: 2.5rem 1.5rem 3rem;
     align-items: center;
-    text-align: center;
   }
 
   .hero-right h2 { font-size: 1.4rem; }
