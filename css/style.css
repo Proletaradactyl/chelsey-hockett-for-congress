@@ -1951,6 +1951,18 @@ footer {
 
   .about-cta .cta-buttons { flex-direction: column; align-items: center; }
 
+  /* VOLUNTEER PAGE */
+  .volunteer-page { padding: 3.5rem 1.5rem 3rem; }
+
+  .volunteer-page h1 {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+  .volunteer-page-sub {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
   /* ISSUES PAGE */
   .page-hero { padding: 3.5rem 1.5rem 3rem; }
 
@@ -1980,6 +1992,10 @@ footer {
   .identity-item:first-child { border-top: none; }
 
   .hero-last { font-size: clamp(3rem, 18vw, 4rem); }
+
+  .volunteer-page h1 {
+    font-size: clamp(2.6rem, 16vw, 3.4rem);
+  }
 
   .nav-links a { font-size: 0.95rem; }
 
