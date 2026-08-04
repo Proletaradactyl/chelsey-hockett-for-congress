@@ -1286,7 +1286,7 @@ footer {
 
 .endorsements {
   background: var(--gray-light);
-  padding: 5rem 4rem;
+  padding: 4.8rem 3.8rem;
   text-align: center;
 }
 
@@ -1294,7 +1294,7 @@ footer {
 
 .endorsements h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--teal-deeper);
@@ -1307,7 +1307,7 @@ footer {
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
-  max-width: 860px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
