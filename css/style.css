@@ -1242,6 +1242,26 @@ footer {
 
 .story-text p:last-of-type { margin-bottom: 0; }
 
+#tax-free-info-card {
+  margin: 1.5rem;
+  padding: 2.5rem;
+  background: var(--cream); 
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  justify-content: center; 
+  border: 2px solid var(--pink);
+}
+
+#tax-free-info-card p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+  color: var(--teal-deeper);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
 .full-quote {
   background: var(--pink);
   padding: 5rem 4rem;
@@ -1807,6 +1827,266 @@ footer {
   position: relative;
   z-index: 2;
 }
+
+/* BLOG PAGE STYLES*/
+ .upload-page {
+    background: var(--cream);
+    padding: 3.5rem 4rem 6rem;
+  }
+ 
+  .upload-inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+ 
+  .upload-inner .section-label {
+    margin-bottom: 0.5rem;
+  }
+ 
+  .upload-inner h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    text-transform: uppercase;
+    color: var(--teal-deeper);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.8rem;
+  }
+ 
+  .upload-sub {
+    font-size: 1.05rem;
+    color: #3a4149;
+    line-height: 1.7;
+    max-width: 55ch;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .upload-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--white);
+    border: 1px solid #dde3e8;
+    border-left: 3px solid var(--teal);
+    border-radius: 3px;
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+    color: var(--gray-mid);
+    margin-bottom: 2.5rem;
+  }
+ 
+  .upload-note i { color: var(--teal); }
+ 
+  /* Composer / dropzone */
+  .upload-composer {
+    border: 2px dashed #c5d5dc;
+    border-radius: 4px;
+    background: var(--white);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+ 
+  .upload-composer:hover { border-color: var(--teal); }
+ 
+  .upload-composer.dragover {
+    border-color: var(--pink);
+    background: var(--pink-light);
+  }
+ 
+  .upload-composer .icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 0.9rem;
+    border-radius: 50%;
+    background: var(--pink-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink);
+    font-size: 1.15rem;
+  }
+ 
+  .upload-composer h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 1.05rem;
+    color: var(--teal-deeper);
+    margin-bottom: 0.3rem;
+  }
+ 
+  .upload-composer p {
+    margin: 0;
+    color: var(--gray-mid);
+    font-size: 0.9rem;
+  }
+ 
+  .upload-composer input { display: none; }
+ 
+  /* Feed header, reusing the section-label + divider language from style.css */
+  .feed-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 3rem 0 1.4rem;
+    border-bottom: 1px solid #dde3e8;
+    padding-bottom: 0.8rem;
+  }
+ 
+  .feed-header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--teal-deeper);
+    margin: 0;
+  }
+ 
+  .feed-header span {
+    font-size: 0.82rem;
+    color: var(--gray-mid);
+  }
+ 
+  .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+ 
+  /* Post card follows the same border-top-accent pattern as .issue-card / .event-card */
+  .feed-post {
+    background: var(--white);
+    border: 1px solid #dde3e8;
+    border-top: 3px solid var(--pink);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+ 
+  .feed-post-photo {
+    width: 100%;
+    max-height: 480px;
+    overflow: hidden;
+    background: var(--gray-light);
+  }
+ 
+  .feed-post-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Add this block into css/style.css, right after the existing
+   .feed-post-photo img { ... } rule in the BLOG PAGE STYLES section */
+
+.feed-post-pdf {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.4rem;
+  text-decoration: none;
+}
+
+.feed-post-pdf .pdf-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink);
+  font-size: 1.3rem;
+}
+
+.feed-post-pdf .pdf-label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--teal-deeper);
+  font-size: 1rem;
+}
+
+.feed-post-pdf .pdf-sub {
+  font-size: 0.8rem;
+  color: var(--gray-mid);
+  margin-top: 0.2rem;
+}
+ 
+  .feed-post-body {
+    padding: 1.1rem 1.4rem 1.4rem;
+  }
+ 
+  .feed-post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: var(--gray-mid);
+    margin-bottom: 0.55rem;
+  }
+ 
+  .feed-post-meta .filename {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--teal-deeper);
+  }
+ 
+  .feed-post-meta .remove {
+    background: none;
+    border: none;
+    color: var(--gray-mid);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+  }
+ 
+  .feed-post-meta .remove:hover {
+    color: var(--pink);
+    background: var(--pink-light);
+  }
+ 
+  .feed-caption {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--charcoal);
+    resize: none;
+    padding: 0;
+  }
+ 
+  .feed-caption::placeholder { color: #a9b0b6; }
+ 
+  .feed-empty {
+    text-align: center;
+    color: var(--gray-mid);
+    padding: 2.5rem 1rem;
+    font-size: 0.92rem;
+    border: 1px dashed #dde3e8;
+    border-radius: 3px;
+    background: var(--white);
+  }
+ 
+  @media (max-width: 768px) {
+    .upload-page { padding: 2.5rem 1.5rem 4rem; }
+  }
 
 /* MOBILE RESPONSIVE STYLES */
 
