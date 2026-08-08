@@ -484,6 +484,7 @@ footer {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
+  word-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.85);
   text-align: center;
@@ -860,7 +861,7 @@ footer {
 
 /* JOIN */
 .join-wrap {
-  background: var(--cream);
+  background: var(--pink-light);
   padding: 5rem 3rem;
 }
 
