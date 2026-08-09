@@ -231,7 +231,7 @@ footer {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--pink);
   margin-bottom: 0.8rem;
@@ -1320,7 +1320,7 @@ footer {
   text-transform: uppercase;
   color: var(--teal-deeper);
   margin-bottom: 3rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .endorse-grid {
