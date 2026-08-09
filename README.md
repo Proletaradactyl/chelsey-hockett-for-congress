@@ -9,6 +9,7 @@ chelsey/
 ├── index.html              Homepage
 ├── about.html              About page
 ├── issues.html             Issues & platform page
+├── blog.html               Blog page
 ├── css/
 │   └── style.css          Shared stylesheet
 ├── images/                Asset directory for photos and graphics
@@ -21,6 +22,7 @@ chelsey/
 - **index.html** – Homepage with hero, about preview, and key platforms
 - **about.html** – Full biography, background, and candidate story
 - **issues.html** – Detailed issue positions with expandable accordion
+- **blog.html** - For rerouting traffic from social media posts that need to provide more details
 
 ## Styling
 
