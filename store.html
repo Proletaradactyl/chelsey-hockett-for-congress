@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K5XQN76HF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4K5XQN76HF');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Store</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Satisfy&family=Source+Sans+3:wght@400;600&family=Caveat:wght@400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="store-page">
+        <!-- NAV -->
+    <nav>
+        <div class="nav-logo">
+            <span class="nav-logo-bold">Chelsey</span>
+            <span class="nav-logo-script">Hockett</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation"
+            onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="index.html#endorsements">Endorsements</a></li>
+            <!--<li><a href="blog.html">Blog</a></li>-->
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="store.html" class="active">Store</a></li>
+            <li>
+                <a href="https://secure.actblue.com/donate/chelseyhockettforcongress" class="nav-donate">Donate</a>
+            </li>
+        </ul>
+    </nav>
+
+	<hero>
+
+        <p style="text-align:center;font-size:1.5rem;font-weight:700;margin-top:2rem;">COMING SOON</p>
+        <!-- Brand and cart section
+        <div class="brand">
+			<div class="logo">CM</div>
+			<div>
+				<div style="font-weight:700">Campaign Merch</div>
+				<div style="font-size:13px;color:#666">Support the campaign — small batch merch</div>
+			</div>
+		</div>
+		<div>
+			<button class="cart" id="cartBtn">Cart <span class="badge" id="cartCount" style="display:none">0</span></button>
+		</div>
+		<h2 style="margin:6px 0 18px">Featured Items</h2>
+		<div class="grid" id="products"></div>
+	
+
+	<div class="cart-panel" id="cartPanel">
+		<h3 style="margin:6px 0">Your Cart</h3>
+		<div id="cartItems"></div>
+		<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+			<strong>Total</strong>
+			<strong id="cartTotal">$0.00</strong>
+		</div>
+		<div style="margin-top:12px;display:flex;gap:8px">
+			<button id="checkout">Checkout</button>
+			<button class="secondary" id="clearCart">Clear</button>
+		</div>
+	</div>-->
+	</hero>
+</body>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <span class="footer-logo-bold">Chelsey</span>
+        <span class="footer-logo-script">Hockett</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li>
+          <a href="mailto:campaign@chelseyhockettforcongress.com">Contact</a>
+        </li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://facebook.com/YOURPAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com/YOURHANDLE" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@YOURHANDLE" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-legal">
+        Paid for by the Chelsey Hockett for Congress Campaign ·
+        chelseyhockettforcongress.com
+      </p>
+    </footer>
+
+<script src="store.js"></script>
+</body>
+
+</html>

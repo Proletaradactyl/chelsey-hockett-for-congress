@@ -20,6 +20,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body>
@@ -40,6 +41,7 @@
             <li><a href="index.html#endorsements">Endorsements</a></li>
             <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>
                 <a href="https://secure.actblue.com/donate/chelseyhockettforcongress" class="nav-donate">Donate</a>
             </li>
@@ -47,8 +49,11 @@
     </nav>
 
     <!-- HERO -->
-
-    <div class="story-section reverse">
+    <section class="page-hero">
+      <h1>See our latest updates</h1>
+    </section>
+  
+   <!--<div class="story-section reverse">
         <div class="story-photo deep-bg" style="padding: 1.5rem">
             <img src="images/Hockett-Tax-Free-Weekend-Guide.jpg"
                 alt="Chelsey Hockett holding a plaque that says 'Registered Democrat'" style="width: 100%;
@@ -67,78 +72,91 @@
                 Please reach out if you have any questions or need any assistance. I am here to help you!
             </p>
         </div>
-    </div>
+    </div>-->
 
-    <!--TEAM BLOG POST UPLOAD
-    <section class="page-hero">
-      <h1>See our latest updates</h1>
-    </section>
-
+ 
+    <!-- TEAM PHOTO UPLOAD -->
     <section class="upload-page">
       <div class="upload-inner">
-        <p class="section-label">TBA</p>
-        <h1>Team Photo Upload</h1>
+        <p class="section-label">Prototype</p>
+        <div class="upload-title-row">
+          <h1>Team Photo Upload</h1>
+          <button class="team-login-btn" id="teamLoginBtn">
+            <i class="fa-solid fa-lock"></i> Team Login
+          </button>
+        </div>
         <p class="upload-sub">
           Drag photos or PDFs in from your desktop, or click the box below to browse.
           Each one becomes its own post in the feed, newest at the top.
         </p>
-        <div class="upload-note">
-          <i class="fa-solid fa-circle-info"></i>
-          Demo only — posts live in this browser tab and disappear on refresh.
-        </div>
 
+ 
+        <!-- Login overlay -->
+        <div class="login-gate" id="loginGate">
+          <div class="login-gate-box">
+            <h3>Team Login</h3>
+            <p>Sign in with your team account to upload and manage photos.</p>
+            <input type="email" id="teamEmailInput" placeholder="Email" autocomplete="username" />
+            <input type="password" id="teamPasswordInput" placeholder="Password" autocomplete="current-password" />
+            <div class="login-gate-actions">
+              <button class="btn-pink" id="teamPasswordSubmit">Sign In</button>
+              <button class="login-gate-cancel" id="teamLoginCancel">Cancel</button>
+            </div>
+            <p class="login-gate-error" id="loginGateError">Couldn't sign in. Check your email and password.</p>
+          </div>
+        </div>
+ 
         <div class="upload-composer" id="dropzone">
           <div class="icon"><i class="fa-solid fa-images"></i></div>
           <h3>Drop images or PDFs here</h3>
           <p>or click to choose files — JPG, PNG, GIF, PDF</p>
           <input type="file" id="fileInput" accept="image/*,application/pdf" multiple />
         </div>
-
+ 
         <div class="feed-header">
           <h2>Feed</h2>
           <span id="countLabel">0 posts</span>
         </div>
-
+ 
         <div class="feed" id="feed">
           <div class="feed-empty" id="emptyState">No posts yet — drop a photo above to start the feed.</div>
         </div>
-      </div>    
-    </section> -->
-
+      </div>
+    </section>
+ 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-logo">
-            <span class="footer-logo-bold">Chelsey</span>
-            <span class="footer-logo-script">Hockett</span>
-        </div>
-        <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="issues.html">Issues</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li>
-                <a href="mailto:campaign@chelseyhockettforcongress.com">Contact</a>
-            </li>
-        </ul>
-        <div class="footer-social">
-            <a href="https://facebook.com/ChelseyHockettforCongress/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/chelseyhockettforcongress/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://tiktok.com/@hockettforcongress" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-        </div>
-        <p class="footer-legal">
-            Paid for by the Chelsey Hockett for Congress Campaign ·
-            chelseyhockettforcongress.com
-        </p>
+      <div class="footer-logo">
+        <span class="footer-logo-bold">Chelsey</span>
+        <span class="footer-logo-script">Hockett</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li>
+          <a href="mailto:campaign@chelseyhockettforcongress.com">Contact</a>
+        </li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://facebook.com/YOURPAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com/YOURHANDLE" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@YOURHANDLE" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-legal">
+        Paid for by the Chelsey Hockett for Congress Campaign ·
+        chelseyhockettforcongress.com
+      </p>
     </footer>
-
-    <script src="js/draganddrop.js"></script>
+ 
+    <script src="js/app.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
